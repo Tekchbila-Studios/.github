@@ -1,0 +1,16 @@
+# Forces every issue through a template. Turn this back on if triage starts
+# losing reports that fit neither form — a blank issue beats a silent user.
+blank_issues_enabled: false
+
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Tekchbila-Studios/.github/blob/main/SECURITY.md
+    about: Report it privately. Never in a public issue.
+
+  - name: Question or usage help
+    url: https://github.com/Tekchbila-Studios/.github/blob/main/SUPPORT.md
+    about: Where to ask, and what to include so the answer comes back fast.
+
+  - name: Infragr.am — accounts, billing, the hosted service
+    url: https://infragr.am
+    about: Anything about the service rather than the source.
