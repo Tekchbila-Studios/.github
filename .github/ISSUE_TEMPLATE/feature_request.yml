@@ -1,0 +1,52 @@
+# See the note in bug_report.yml about why there is no `labels:` key.
+name: Feature request
+description: Propose a change in behaviour or a new capability
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: >
+        What are you trying to do that you can't do today? Describe the
+        situation, not the solution — the best fix is often not the one the
+        reporter had in mind.
+      placeholder: >
+        I need to see which resources changed between two plans, and today I
+        have to render both diagrams and compare them by eye.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like to happen
+      description: Your proposed behaviour, concretely. Sketch the CLI or UI if it helps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you tried or considered
+      description: >
+        Workarounds you're using now, and approaches you rejected. This is the
+        most useful box on the form — it's where the constraints live.
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How much does this matter to you
+      options:
+        - Blocking — I can't use the project without it
+        - Painful — I have a workaround and I hate it
+        - Nice to have
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions for this idea
+          required: true
